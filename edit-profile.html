@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BowTex - Paragon Of Its Kind</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/validation.css">
+  <!-- Nucleo Icons -->
+  <link href="assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <link href="assets/css/font-awesome.css" rel="stylesheet" />
+  <link href="assets/css/nucleo-svg.css" rel="stylesheet" />
+  <link href="assets/font/css/all.css" rel="stylesheet">
+  <!--Argon CSS -->
+  <link href="assets/css/argon.css" rel="stylesheet" />
+  <!-- Animation library for notifications   -->
+  <link href="assets/css/animate.min.css" rel="stylesheet"/>
+
+  <style>
+    .menu-item-has-children {
+        position: relative; 
+    }
+
+    .menu-item-has-children a {
+        line-height: 30px; 
+    }
+
+    .menu-item-has-children .sub-menu {
+      border: none;
+      box-shadow: none;
+      overflow-y: hidden;
+      padding: 0 0 0 35px; 
+    }
+
+    .menu-item-has-children .sub-menu li {
+      position: relative; 
+    }
+
+    .sub-menu i {
+      float: left;
+      padding: 0;
+      position: absolute;
+      left: 0;
+      font-size: 14px;
+      top: 9px; 
+    }
+
+    .sub-menu a {
+      padding: 2px 0 2px 30px; 
+    }
+
+    .sub-menu a:before {
+      content: '';
+      display: none; 
+    }
+
+    .sub-menu a .menu-icon {
+      top: 13px;
+      text-align: left;
+      width: 25px; 
+    }
+
+    .menu-item-has-children.show .sub-menu {
+      max-height: 1000px;
+      opacity: 1;
+      position: static !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- Call the side nav bar -->
+  <nav class="sidenav navbar navbar-vertical fixed-left  navbar-expand-xs navbar-light bg-white">
+    <!-- Calls the inner scroll bar -->
+    <div class="scrollbar-inner">
+      <!-- Sid nav bar header -->
+      <div class="sidenav-header  align-items-center">
+        <a class="navbar-brand" href="dashboard.html">
+          <!-- Side Nav Bar Header Text or image -->
+          <img src="assets/img/img_copyright/blue-bowtext.jpg" alt="">
+        </a>
+      </div>
+      <!-- Divider -->
+      <hr class="my-3">
+      <!-- side-nav bar content -->
+      <div class="navbar-inner">
+        <!-- Collapse For Navbar at small size -->
+        <div class="collapse navbar-collapse">
+          <!-- Navbar inner Main Text -->
+          <h6 class="navbar-heading p-0 text-dark">
+            <span class="font-weight-400">MAIN</span>
+          </h6>
+          <!-- Nav Bar Contents -->
+          <ul class="navbar-nav">
+            <!-- Nav Bar Item For Dashboard -->
+            <li class="nav-item">
+              <a class="nav-link active" href="dashboard.html">
+                <i class="fa fa-television text-primary"></i>
+                <span class="nav-link-text">Dashboard</span>
+              </a>
+            </li>
+            <!-- Nav Bar Item For Dashboard -->
+            <li class="nav-item menu-item-has-children dropdown">
+              <a href="#" class="dropdown-toggle nav-link" role="button" id="navbar-primary_dropdown_1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-bell text-primary"></i>Withdrawal System</a>
+              <ul class="dropdown-menu sub-menu border border-0" aria-labelledby="navbar-primary_dropdown_1">
+                <li><i class="menu-icon fa fa-user-edit text-darker"></i><a href="edit-profile.html" class="text-sm text-dark font-weight-300">Process Withdrawal</a></li>
+                <div class="dropdown-divider"></div>
+                <li><i class="menu-icon fa fa-user-check text-darker"></i><a href="view-profile.html" class="text-sm text-dark font-weight-300">Payment Wallet History<i class="fa fa-history" aria-hidden="true"></i></a></li>
+                <div class="dropdown-divider"></div>
+                <li><i class="menu-icon fa fa-user-check text-darker"></i><a href="view-profile.html" class="text-sm text-dark font-weight-300">Account No Activation<i class="fa fa-history" aria-hidden="true"></i></a></li>
+              </ul>
+            </li>
+            <!-- Nav Bar Item For Dashboard -->
+            <li class="nav-item">
+              <a class="nav-link" href="examples/icons.html">
+                <i class="fa fa-receipt text-primary"></i>
+                <span class="nav-link-text">Payout Records</span>
+              </a>
+            </li>
+            <li class="nav-item menu-item-has-children dropdown">
+              <a href="#" class="dropdown-toggle nav-link" role="button" id="navbar-primary_dropdown_1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-user text-primary"></i>Time-Table</a>
+              <ul class="dropdown-menu sub-menu border border-0" aria-labelledby="navbar-primary_dropdown_1">
+                <li><i class="menu-icon fa fa-user-edit text-darker"></i><a href="timetable-withdrawal.html" class="text-sm text-dark font-weight-300">Time-Table (Withdrawal)</a></li>
+                <div class="dropdown-divider"></div>
+                <li><i class="menu-icon fa fa-user-check text-darker"></i><a href="timetable-payment.html" class="text-sm text-dark font-weight-300">Time-Table (Payment)</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">
+                <i class="fa fa-newspaper-o text-primary"></i>
+                <span class="nav-link-text">News</span>
+              </a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" href="notification.html">
+                <i class="fa fa-bell text-primary"></i>
+                <span class="nav-link-text">Notification <span class="badge badge-circle badge-darker text-white">4</span></span>    
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="people-testimonies.html">
+                <i class="fa fa-chart-line text-primary"></i>
+                <span class="nav-link-text">Testimonies</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="examples/icons.html">
+                <i class="fa fa-bell text-primary"></i>
+                <span class="nav-link-text">Sponsored Post <span class="badge badge-circle badge-darker text-white">4</span></span>    
+              </a>
+            </li>
+            <li class="nav-item menu-item-has-children dropdown">
+              <a href="#" class="dropdown-toggle nav-link" role="button" id="navbar-primary_dropdown_1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-user text-primary"></i>Profile</a>
+              <ul class="dropdown-menu sub-menu border border-0" aria-labelledby="navbar-primary_dropdown_1">
+                <li><i class="menu-icon fa fa-user-edit text-darker"></i><a href="edit-profile.html" class="text-sm text-dark font-weight-300">Edit Profile</a></li>
+                <div class="dropdown-divider"></div>
+                <li><i class="menu-icon fa fa-user-check text-darker"></i><a href="view-profile.html" class="text-sm text-dark font-weight-300">View Profile</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="leaderboard.html">
+                <i class="fas fa-directions text-primary"></i>
+                <span class="nav-link-text">Leaderboard</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact-support-system.php">
+                <i class="fas fa-group text-primary"></i>
+                <span class="nav-link-text">Spin and Wheel</span>
+              </a>
+            </li>
+            <li class="nav-item menu-item-has-children dropdown">
+              <a class="nav-link" href="contact-support-system.php">
+                <i class="fas fa-group text-primary"></i>
+                <span class="nav-link-text">Discover</span>
+              </a>
+            </li>
+          </ul>
+          <!-- Divider -->
+          <hr class="nav-divider">
+          <!-- Divider Text -->
+          <h6 class="navbar-heading p-0 text-dark">
+            <span class="font-weight-400">EXTRA</span>
+          </h6>
+          <ul class="navbar-nav">
+            <li class="nav-item menu-item-has-children dropdown">
+              <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-gear text-primary"></i>Account Settings
+              </a>
+              <ul class="dropdown-menu sub-menu border border-0">
+                <li><i class="menu-icon fa fa-key text-darker"></i><a href="change-password.html" class="text-sm text-dark font-weight-300">Change Password</a></li>
+                <li>
+                  <i class="menu-icon fa fa-key text-darker"></i
+                  ><a
+                    href="suspend-account.html"
+                    class="text-sm text-dark font-weight-300"
+                    >Suspend Account</a
+                  >
+                </li>
+                <li>
+                  <i class="menu-icon fa fa-key text-darker"></i
+                  ><a
+                    href="delete-account.html"
+                    class="text-sm text-dark font-weight-300"
+                    >Delete Account</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <span class="nav-link">
+                <i class="fa fa-moon text-dark"></i>
+                <span>Night Mode</span>
+                <label class="custom-toggle ml-2">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-toggle-slider rounded-circle"></span>
+                </label>
+              </span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">
+                <i class="fa fa-sign-out-alt text-dark"></i>
+                <span class="nav-link-text">Logout</span>
+              </a>
+            </li>
+          </ul>
+          <h6 class="navbar-heading p-0 mt-5 text-dark">
+            <i class="fa fa-copyright"></i>
+            <span class="font-weight-400">2020</span>
+            <span class="text-warning text-capitalize">Bow<span class="text-success">Tex</span></span>
+          </h6>
+        </div>  
+      </div>
+    </div>
+  </nav>
+  <!-- End Of Navigation Bar -->
+
+  <!-- Main content -->
+  <div class="main-content">
+    <!-- Topnav -->
+    <nav class="navbar navbar-top navbar-expand navbar-dark bg-primary border-bottom">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Search form -->
+          <form class="navbar-search navbar-search-light form-inline mr-sm-3" id="navbar-search-main">
+            <div class="form-group mb-0">
+              <div class="input-group input-group-alternative input-group-merge">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-search"></i></span>
+                </div>
+                <input class="form-control" placeholder="Search" type="text">
+              </div>
+            </div>
+            <button type="button" class="close" data-action="search-close" data-target="#navbar-search-main" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </form>
+          <!-- Navbar right icons -->
+          <!-- align-items-center= align <li> tags to spread center while ml-md-auto= pushes all the content inside the <li> tag to the right at a medium size -->
+          <ul class="navbar-nav align-items-center ml-md-auto">
+            <!--  -->
+            <li class="nav-item d-xl-none">
+              <!-- this toggles the sidenav bar. Sidenav toggler //sidenav-toggler toggles the sidenav bar out, pr-3 means padding-right-3  
+              sidenav-toggler-dark changes the menu icon to white color-->
+              <div class="pr-3 sidenav-toggler sidenav-toggler-dark" data-action="sidenav-pin" data-target="#sidenav-main">
+                <!-- //sidenav-toggler-inner pushes the sidenav-toggler-line while the (3) sidenav-toggler-line produce the 3
+                lines that looks exactly like the menu bar -->
+                <div class="sidenav-toggler-inner">
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                </div>
+              </div>
+            </li>
+            <!-- Search Icon for mobile device -->
+            <li class="nav-item d-sm-none">
+              <a class="nav-link" href="#" data-action="search-show" data-target="#navbar-search-main">
+                <i class="fa fa-search"></i>
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav align-items-center ml-auto ml-md-0 ">
+            <li  class="nav-item dropdown">
+              <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="media align-items-center">
+                  <span class="avatar avatar-sm rounded-circle">
+                    <img alt="Image placeholder" src="assets/img/hd/team-4.jpg">
+                  </span>
+                  <div class="media-body  ml-2  d-none d-lg-block">
+                    <span class="mb-0 text-sm  font-weight-bold">Talabi Ayomide</span>
+                  </div>
+                </div>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right ">
+                <div class="dropdown-header noti-title">
+                  <h6 class="text-overflow m-0">Welcome!</h6>
+                </div>
+                <a href="#!" class="dropdown-item">
+                  <i class="ni ni-single-02"></i>
+                  <span>My profile</span>
+                </a>
+                <a href="#!" class="dropdown-item">
+                  <i class="ni ni-settings-gear-65"></i>
+                  <span>Settings</span>
+                </a>
+                <a href="#!" class="dropdown-item">
+                  <i class="ni ni-calendar-grid-58"></i>
+                  <span>Activity</span>
+                </a>
+                <a href="#!" class="dropdown-item">
+                  <i class="ni ni-support-16"></i>
+                  <span>Support</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#!" class="dropdown-item">
+                  <i class="ni ni-user-run"></i>
+                  <span>Logout</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>  
+    <!-- Header -->
+    <div class="header pb-6 d-flex align-items-center" style="min-height: 500px; background-image: url(assets/img/hd/team-4.jpg); background-size: cover; background-position: center top;">
+      <!-- Mask -->
+      <span class="mask bg-gradient-default opacity-7"></span>
+      <!-- Header container -->
+      <div class="container-fluid d-flex align-items-center">
+        <div class="row">
+          <div class="col-lg-7 col-md-10">
+            <h1 class="display-2 text-white">Hello Talabi Ayomide</h1>
+            <p class="text-white mt-0 mb-5">This is your Edit profile page. You can Update Your Profile you've made with your work and manage your projects or assigned tasks</p>
+            <a href="view-profile.html" class="btn btn-neutral">View profile</a>
+          </div>
+        </div>
+      </div>
+    </div>  
+    <div class="container-fluid mt--2">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header bg-transparent">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h3 class="h3 mb-0">Edit Profile</h3>
+                </div>
+              </div>
+            </div>
+            <form action="" method="post">
+              <div class="card-body">
+                <h6 class="h3 mb-4">User Information</h6>
+                <div class="pl-md-4">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="" class="form-control-label">First Name</label>
+                        <div class="input-group input-group-merge input-group-alternative">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-user-tie"></i></span>
+                          </div>
+                          <input class="form-control text-darker" placeholder="First Name" type="text" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="" class="form-control-label">Last Name</label>
+                        <div class="input-group input-group-merge input-group-alternative">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-user-tie"></i></span>
+                          </div>
+                          <input class="form-control text-darker" placeholder="Last Name" type="text" required>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="" class="form-control-label">Username</label>
+                        <div class="input-group input-group-merge input-group-alternative">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-user"></i></span>
+                          </div>
+                          <input class="form-control text-darker" placeholder="Username" type="text" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="" class="form-control-label">Email Address</label>
+                        <div class="input-group input-group-merge input-group-alternative">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                          </div>
+                          <input class="form-control text-darker" placeholder="Email Address" type="email" required>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="" class="form-control-label">Mobile Number</label>
+                        <div class="input-group input-group-merge input-group-alternative">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-mobile-alt"></i></span>
+                          </div>
+                          <input class="form-control text-darker" placeholder="Mobile Number" type="text" required>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h6 class="h3 mb-4">Social Media Information</h6>
+                <div class="pl-md-4">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="" class="form-control-label">Facebook Profile Url</label>
+                        <div class="input-group input-group-merge input-group-alternative">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fab fa-facebook text-blue"></i></span>
+                          </div>
+                          <input class="form-control text-darker" placeholder="www.facebook.com/url" type="text" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="" class="form-control-label">Instagram Profile Url</label>
+                        <div class="input-group input-group-merge input-group-alternative">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fab fa-instagram text-red"></i></span>
+                          </div>
+                          <input class="form-control text-darker" placeholder="www.instagram.com/url" type="text" required>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="" class="form-control-label">Twitter Profile Url</label>
+                        <div class="input-group input-group-merge input-group-alternative">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fab fa-twitter text-blue"></i></span>
+                          </div>
+                          <input class="form-control text-darker" placeholder="www.twitter.com/url" type="text" required>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <button class="btn btn-icon btn-3 btn-primary my-4 btn-round" type="button" style="border-width: 1px; border-radius: 30px; padding-right: 23px; padding-left: 23px;">
+                      <span class="btn-inner--icon"><i class="fa fa-check-circle"></i></span>
+                    <span class="btn-inner--text">Update</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="py-5 bg-primary">
+      <div class="container">
+        <div class="row align-items-center justify-content-xl-between">
+          <div class="col-xl-6">
+            <div class="copyright text-center text-xl-left text-white">
+              &copy; 2020 <a href="index.html" class="font-weight-bold ml-1" target="_blank">BowText</a>
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <ul class="nav nav-footer justify-content-center justify-content-xl-end">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link text-white" target="_blank">BowText</a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.creative-tim.com/presentation" class="nav-link text-white" target="_blank">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="http://blog.creative-tim.com" class="nav-link text-white" target="_blank">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a href="https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md" class="nav-link text-white" target="_blank">MIT License</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+
+  <!-- Core jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="assets/js/core/jquery.min.js"></script>
+  <script src="assets/js/core/popper.min.js"></script>
+  <script src="assets/js/core/bootstrap.min.js"></script>
+  <script src="assets/js/core/tether.min.js"></script>
+  <!-- Optional plugins -->
+  <script src="assets/js/core/main.js"></script>
+  <script src="assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!-- Form Validation Js -->
+  <script src="assets/js/core/form-validation.js"></script>
+  <!-- Argon JS -->
+  <script src="assets/js/argon.js"></script>
+</body>
+</html>

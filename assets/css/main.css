@@ -1,0 +1,1149 @@
+/* Sticky footer styles
+-----------------------------------------------------*/
+/* body{ */
+    /*Margin bottom by footer height */
+    /* margin-bottom:72px;
+} */
+
+/* .footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%; */
+    /* Set the fixed height of the footer here */
+    /* height: 72px;
+    line-height: 72px; Vertically center the text there */
+    /* background-color: #f5f5f5;
+} */
+
+/* .footer p{
+    margin-bottom: 0px;
+} */
+/*--------------------------------------------------------*/
+
+
+
+
+
+/* Back to top css 
+----------------------------------------------------------*/
+#back-to-top{
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    cursor: pointer; /* Add a mouse pointer on hover */
+}
+
+#back-to-top:hover{
+    background-color: black;
+}
+/*----------------------------------------------------------*/
+
+
+
+
+/* Glowing Text 
+----------------------------------------------------------*/
+.glow {
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+  
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+/*----------------------------------------------------------*/
+
+
+/*Moving Clouds Time to animate*/
+.x1 {
+	-webkit-animation: moveclouds 15s linear infinite;
+	-moz-animation: moveclouds 15s linear infinite;
+	-o-animation: moveclouds 15s linear infinite;
+}
+
+/*variable speed, opacity, and position of clouds for realistic effect*/
+.x2 {
+	left: 200px;
+	
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+	opacity: 0.6; /*opacity proportional to the size*/
+	
+	/*Speed will also be proportional to the size and opacity*/
+	/*More the speed. Less the time in 's' = seconds*/
+	-webkit-animation: moveclouds 25s linear infinite;
+	-moz-animation: moveclouds 25s linear infinite;
+	-o-animation: moveclouds 25s linear infinite;
+}
+
+.x3 {
+	left: -250px; top: -200px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 20s linear infinite;
+	-moz-animation: moveclouds 20s linear infinite;
+	-o-animation: moveclouds 20s linear infinite;
+}
+
+.x4 {
+	left: 470px; top: -250px;
+	
+	-webkit-transform: scale(0.75);
+	-moz-transform: scale(0.75);
+	transform: scale(0.75);
+	opacity: 0.75; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 18s linear infinite;
+	-moz-animation: moveclouds 18s linear infinite;
+	-o-animation: moveclouds 18s linear infinite;
+}
+
+.x5 {
+	left: -150px; top: -150px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 20s linear infinite;
+	-moz-animation: moveclouds 20s linear infinite;
+	-o-animation: moveclouds 20s linear infinite;
+}
+
+@-webkit-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-moz-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-o-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+
+
+#bty i.animated{
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+.mask
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    transition: all .15s ease;
+}
+@media (prefers-reduced-motion: reduce)
+{
+    .mask
+    {
+        transition: none;
+    }
+}
+
+
+
+
+
+/* SideBar for Dashboard Template = Adding Dropdown Toggle for dashboard for sub-menu-item */
+
+.menu-item-has-children{
+    position: relative; 
+}
+
+.menu-item-has-children a {
+    line-height: 30px; 
+}
+
+.menu-item-has-children .sub-menu {
+  border: none;
+  box-shadow: none;
+  overflow-y: hidden;
+  padding: 0 0 0 35px; 
+}
+
+.menu-item-has-children .sub-menu li {
+    position: relative; 
+}
+
+.sub-menu i {
+    float: left;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    font-size: 14px;
+    top: 9px; 
+}
+
+.sub-menu a {
+    padding: 2px 0 2px 30px; 
+}
+
+.sub-menu a:before {
+    content: '';
+    display: none; 
+}
+
+.sub-menu a .menu-icon {
+    top: 13px;
+    text-align: left;
+    width: 25px; 
+}
+
+.menu-item-has-children.show .sub-menu {
+  max-height: 1000px;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  position: static !important;
+}
+
+
+
+
+
+
+
+
+/* Floating Label */
+.form-label-group {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.form-label-group > input,
+.form-label-group > label {
+height: 3.125rem;
+padding: .75rem;
+}
+
+.form-label-group > label {
+position: absolute;
+top: 0;
+left: 0;
+display: block;
+width: 100%;
+margin-bottom: 0; /* Override default `<label>` margin */
+line-height: 1.5;
+color: #495057;
+pointer-events: none;
+cursor: text; /* Match the input under the label */
+border: 1px solid transparent;
+border-radius: .25rem;
+transition: all .1s ease-in-out;
+}
+
+.form-label-group input::-webkit-input-placeholder {
+color: transparent;
+}
+
+.form-label-group input:-ms-input-placeholder {
+color: transparent;
+}
+
+.form-label-group input::-ms-input-placeholder {
+color: transparent;
+}
+
+.form-label-group input::-moz-placeholder {
+color: transparent;
+}
+
+.form-label-group input::placeholder {
+color: transparent;
+}
+
+.form-label-group input:not(:placeholder-shown) {
+padding-top: 1.25rem;
+padding-bottom: .25rem;
+}
+
+.form-label-group input:not(:placeholder-shown) ~ label {
+padding-top: .25rem;
+padding-bottom: .25rem;
+font-size: 12px;
+color: #777;
+}
+
+/* Fallback for Edge
+-------------------------------------------------- */
+@supports (-ms-ime-align: auto) {
+.form-label-group > label {
+    display: none;
+}
+.form-label-group input::-ms-input-placeholder {
+    color: #777;
+}
+}
+
+/* Fallback for IE
+-------------------------------------------------- */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+.form-label-group > label {
+    display: none;
+}
+.form-label-group input:-ms-input-placeholder {
+    color: #777;
+}
+}
+
+/** Round Buuton Class**/
+.btn-round {
+    border-width: 1px;
+    border-radius: 30px; 
+    padding-right: 23px;
+    padding-left: 23px;
+	
+}
+ 
+/** Bootstrap Card Class**/
+.card.card-plain{
+	background-color: transparent;
+	box-shadow: none;
+	border-radius: 0; 
+}
+
+
+.card.card-plain img {
+	border-radius: 12px; 
+}
+
+.card-plain {
+	background: transparent;
+	box-shadow: none; 
+}
+
+.card-plain .card-header, .card-plain .card-footer {
+    margin-left: 0;
+    margin-right: 0;
+    background-color: transparent; 
+}
+
+.card-plain:not(.card-subcategories).card-body {
+    padding-left: 0;
+    padding-right: 0; 
+}
+
+
+
+
+
+
+
+
+	
+/* Loading Gif (Preloader) */
+#loading{
+    width: 100%;
+    height: 100vh;
+    background: #fff 
+    url('../img/loader-64x/Preloader_1.gif') no-repeat center  ;
+    position: fixed;
+    z-index: 99999;
+}
+	
+/* Slider for homepage */
+.slider {
+	position: relative;
+}
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+.rslides img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+    border: 0;
+}
+
+.banner1{
+	background: url(../img/hd/1.jpg) no-repeat;
+    width:100%;
+	min-height: 500px;
+	background-size: cover;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.banner2{
+	background: url(../img/hd/2.jpg) no-repeat;
+	width:100%;
+	min-height: 500px;
+	background-size: cover;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.banner3{
+	background: url(../img/hd/4.jpg) no-repeat;
+	width:100%;
+	min-height: 500px;
+	background-size: cover;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.banner4{
+	background: url(../img/hd/5.jpg) no-repeat;
+	width:100%;
+	min-height: 500px;
+	background-size: cover;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.caption{
+	position: absolute;
+	top: 43%;
+  	left: 13%;
+}
+
+/* Subscribe Button */
+form#subscribe-newsletter div.input-group input[type="email"]{
+    border: 1px solid #003cc7;
+    width: 235px;
+}
+
+form#subscribe-newsletter div.input-group input[type="email"]:hover{
+    border: 1px solid black;
+    width: 235px;
+}
+
+form#subscribe-newsletter div.input-group input[type="email"]:hover::placeholder{
+    color: black;
+    
+}
+
+form#subscribe-newsletter div.input-group button{
+    background-color: #003cc7;
+}
+/* =============== */
+
+/* Footer */
+#footer .row div h5{
+    letter-spacing: 1.3px;
+    font-family: 'Arial Narrow';
+}
+
+#footer .row div h5 span{
+    border-bottom: 1px solid #313c3d;
+}
+
+#footer .row div ul {
+    margin-top: 30px;
+}
+
+#footer .row div ul li a{
+    color: #b0b8bd;
+    margin-left: -10px;
+    margin-top: 4px;
+    letter-spacing: 1.9px;
+    font-family: 'Arial Narrow';
+}
+
+#less-footer h4{
+    font-family: 'Arial Narrow';
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+#less-footer p a{
+    color: rgb(140, 140, 192);
+}
+
+/* ========= */
+
+/* Customer Service Support */
+#customer-service-support .container .row div h5 span{
+    border-bottom:1px solid #003cc7; 
+}
+
+#customer-service-support .container .row div p{
+    font-family: 'Arial Narrow';
+    letter-spacing: 1.3px;
+    color: #313c3d;
+}
+
+#customer-service-support .container .row div a{
+    background-color: #003cc7; 
+    width:150px; 
+    padding-right: 23px; 
+    padding-left: 23px;
+    border-color: none;
+    border-radius: 30px;
+}
+
+#customer-service-support .container .row div img{
+    width: 250px;
+}
+/* ====================== */
+
+/* Revenue Hit Target */
+    #revenue-hit-target{
+        background: linear-gradient(-130deg, #003cc7, #495057)
+    }
+
+    #revenue-hit-target h5{
+        font-family: 'Arial Narrow';
+        letter-spacing: 1.2px;
+    }
+
+    #revenue-hit-target p{
+        font-family: 'Arial Narrow';
+        letter-spacing: 1.2px;
+    }
+
+    #revenue-hit-target #revenue-section{
+        padding-top: 20px;
+    }
+
+    #revenue-hit-target #revenue-section h3{
+        
+    }
+
+    #revenue-hit-target #revenue-section p{
+        font-family: 'Arial Narrow';
+        color: rgb(224, 211, 211);
+    }
+/* ================ */
+
+/* Statistics */
+    #statistics{
+        background-color: #003cc7;
+    }
+
+    #statistics .container div.card{
+        background-color: #003cc7;
+    }
+
+/* ========= */
+
+/* Offers */
+
+    #offers #greetings{
+        font-family: 'Arial Narrow';
+        font-weight: bold;
+    }
+
+    #offers .container #description{
+        font-family: 'Arial Narrow';
+        font-weight: bold;
+    }
+
+    #offers .container ul{
+        list-style-type: square;
+        margin-left: -20px;
+        color: rgb(46, 45, 49);
+        letter-spacing: 2px;
+        font-family: 'Arial Narrow';
+    }
+
+    #offers .container ul li{
+        padding-bottom: 5px;
+    }
+
+/* ====== */
+
+/* Registration Page */
+    #registration-description div h3{
+        font-family: 'Arial Narrow';
+    }
+
+    #registration-form div{
+        border-bottom: none;
+    }
+
+    #registration-form div p{
+        font-family: 'Arial Narrow';
+        font-size: 21px;
+    }
+
+    #registration-form div.card-header small{
+        letter-spacing: 2px;
+        color: rgb(109, 102, 102);
+    }
+
+    #registration-form div form label{
+        letter-spacing: 1.3px;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    #registration-form div form input[type=text]{
+        border: none;
+        border-bottom: 1px solid blue;
+        padding: 0;
+        width: 100%;
+    }
+
+    #registration-form div form input[type=password]{
+        border: none;
+        border-bottom: 1px solid blue;
+        padding: 0;
+        width: 100%;
+    }
+
+
+    #registration-form div form input[type=tel]{
+        border: none;
+        border-bottom: 1px solid blue;
+        width: 193%;
+    }
+
+    #registration-form div form input[type=email]{
+        border: none;
+        border-bottom: 1px solid blue;
+        padding: 0;
+        width: 100%;
+    }
+
+    #registration-form div form div.custom-control.custom-control-alternative.custom-checkbox.pb-3 input[type=checkbox]{
+        margin-bottom: -12px;
+    }
+
+    #registration-form div form div.custom-control.custom-control-alternative.custom-checkbox.pb-3 label{
+        font-size: 18px;
+    }
+
+    #registration-form div form button{
+        background-color: #003cc7;  
+        padding-right: 23px; 
+        padding-left: 23px;
+        border-color: none;
+        border-radius: 30px;
+    }
+
+    #registration-form div form button:hover{
+        background-color: #313c3d;
+        border: 1px solid #313c3d;
+    }
+
+    #registration-form div form button span.btn-inner--text{
+        font-family: 'Arial Narrow';
+    }
+
+    #registration-form div form div.custom-control.custom-control-alternative.custom-checkbox.pb-3 a:hover{
+        text-decoration: underline;
+    }
+
+    .font-icon{
+
+    }
+
+    /* Enhancing and styling icon has-danger icon has-success */
+    #registration-form #registration-feedback-validation div#form-psd.form-group.has-danger:after, #registration-form #registration-feedback-validation div#form-psd.form-group.has-success:after{
+        width: 19px;
+        height: 19px;
+        line-height: 19px;
+        text-align: center;
+        font-family: NucleoIcons;
+        display: inline-block;
+        position: absolute;
+        right: 38px;
+        top: 34px;
+        transform: translateY(50%);
+        border-radius: 50%;
+        font-size: 9px;
+        opacity: 1;
+    }
+
+    #registration-form #registration-feedback-validation div.form-group.has-danger{
+       position: relative; 
+    }
+
+    #registration-form #registration-feedback-validation div.form-group.has-danger:after {
+        width: 19px;
+        height: 19px;
+        line-height: 19px;
+        text-align: center;
+        font-family: NucleoIcons;
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 38px;
+        transform: translateY(50%);
+        border-radius: 50%;
+        font-size: 9px;
+        opacity: 1;
+    }
+
+    #registration-form #registration-feedback-validation div.form-group.has-success{
+        position: relative; 
+    }
+ 
+    #registration-form #registration-feedback-validation div.form-group.has-success:after {
+        width: 19px;
+        height: 19px;
+        line-height: 19px;
+        text-align: center;
+        font-family: NucleoIcons;
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 38px;
+        transform: translateY(50%);
+        border-radius: 50%;
+        font-size: 9px;
+        opacity: 1;
+    }
+
+    /*  Enhancing password Strength */
+    #registration-form div form div.form-group .password-strength-indicator.very-weak {
+        color: #cf0000;
+        letter-spacing: 2.6px;
+    }
+
+    #registration-form div form div.form-group .password-strength-indicator.weak {
+        color: #f6891f;
+        letter-spacing: 2.6px;
+    }
+
+    #registration-form div form div.form-group  .password-strength-indicator.mediocre {
+        color: #caca1b;
+        letter-spacing: 2.6px;
+    }
+
+    #registration-form div form div.form-group .password-strength-indicator.strong {
+        color: #99ff33;
+        letter-spacing: 2.6px;
+    }
+
+    #registration-form div form div.form-group .password-strength-indicator.very-strong
+    {
+        color: #22cf00;
+        letter-spacing: 2.6px;
+    }
+
+    .password-strength-indicator
+    {
+        border: 1px solid transparent;
+        border-radius: 3px;
+        display: inline-block;
+        min-height: 18px;
+        min-width: 80px;
+        text-align: center;
+        padding: 5px 10px;
+        color: #fff;
+        margin-top: 30px;
+        background: #003cc7;
+    }
+
+/* ================ */
+
+
+
+
+/* Beginning of Media query for all screens */
+
+@media(max-width:1440px){
+	.banner1, .banner2, .banner3, .banner4 {
+		min-height: 650px;
+    }
+    .support-banner{
+        background: url(../img/hd/2.jpg) no-repeat;
+        width:100%;
+        min-height: 250px;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+    #customer-service-support .container .row div img{
+        width: 250px;
+        margin-top: 180px;
+    }
+    #less-footer p{
+        text-align: right;
+        font-size: 13px;
+        margin-right: 70px;
+    }
+}
+
+@media(max-width:1366px){
+	.caption h3 {
+		font-size: 45px;
+	}
+	.banner1, .banner2, .banner3, .banner4 {
+		min-height: 500px;
+    }
+    .support-banner{
+        background: url(../img/hd/2.jpg) no-repeat;
+        width:100%;
+        min-height: 200px;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+
+    #customer-service-support .container .row div img{
+        width: 250px;
+        margin-top: 180px;
+    }   
+
+    #less-footer p{
+        text-align: right;
+        font-size: 13px;
+        margin-right: 70px;
+    } 
+}
+
+@media(max-width:1280px){
+	.banner1, .banner2, .banner3, .banner4 {
+		min-height: 590px;
+	}
+	.caption h3 {
+		font-size: 42px;
+    }
+}
+
+@media(max-width:1200px){
+	.banner1, .banner2, .banner3, .banner4 {
+		min-height: 560px;
+    }
+	.caption h3 {
+		font-size: 38px;
+    }
+}
+
+@media(max-width:1080px){
+	.banner1, .banner2, .banner3, .banner4 {
+		min-height: 500px;
+	}
+	.caption h3 {
+		font-size: 35px;
+    }
+}
+
+@media(max-width:1024px){
+	.banner1, .banner2, .banner3, .banner4 {
+		min-height: 470px;
+    }
+    .caption h3 {
+		font-size: 33px;
+		letter-spacing: 1px;
+    }
+}
+
+@media(max-width:900px){
+	.banner1, .banner2, .banner3, .banner4 {
+		min-height: 420px;
+	}	
+	.caption h3 {
+		font-size: 32px;
+		letter-spacing: 0px;
+    }
+
+    /* Registration Page */
+    #registration-form div form label{
+        letter-spacing: 1.3px;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    #registration-form div form input[type=text]{
+        border: none;
+        border-bottom: 1px solid blue;
+        padding: 0;
+        width: 100%;
+    }
+
+    #registration-form div form input[type=tel]{
+        border: none;
+        border-bottom: 1px solid blue;
+        width: 122%;
+    }
+
+    /* ================ */
+}
+
+@media(max-width:800px){
+	.caption h3 {
+		font-size: 28px;
+	}
+	.caption p a {
+		font-size: 15px;
+		letter-spacing: 1px;
+	}
+}
+
+@media(max-width:736px){
+	.caption h3 {
+		font-size: 26px;
+	}
+	.banner1, .banner2, .banner3, .banner4 {
+		min-height: 400px;
+	}
+	.caption h3 span {
+		border-bottom: 1px solid #1cebe1;
+		padding-bottom: 3px;
+    }
+}
+
+@media(max-width:667px){
+	.caption h3 {
+		font-size: 24px;
+    }
+}
+
+@media(max-width:600px){
+	.caption {
+		top: 42%;
+		left: 4%;
+		width:96%;
+	}
+	.banner1, .banner2, .banner3, .banner4 {
+		min-height: 360px;
+    }
+}
+
+@media(max-width:568px){
+	.caption h3 {
+		font-size: 22px;
+	}
+	.banner1, .banner2, .banner3, .banner4 {
+		min-height: 340px;
+    }
+}
+
+@media(max-width:480px){
+    .caption h3 {
+		font-size: 19px;
+	}
+	.banner1, .banner2, .banner3, .banner4 {
+		min-height: 300px;
+	}
+	.caption p {
+		margin: 0.4em 0em 0;
+	}	
+}
+
+@media(max-width:414px){
+	.caption h3 {
+		font-size: 19px;
+		line-height: 31px;
+		height: 60px;
+    }
+}
+
+/* For small version mobile device */
+@media(max-width:384px){
+	.support-banner{
+        background: url(../img/hd/2.jpg) no-repeat;
+        width:100%;
+        min-height: 120px;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+
+    /* Footer */
+    #footer .row div h5{
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 12px;
+        letter-spacing: 1.8px;
+        font-family: 'Arial Narrow';
+    }
+
+    #footer .row div ul{
+        margin-bottom: 30px;
+    }
+
+    #footer .row div ul li a{
+        text-align: center;
+        color: #b0b8bd;
+        letter-spacing: 2px;
+        font-family: 'Arial Narrow';
+    }
+
+    #footer .row div h5 span{
+        border-bottom: 1px solid #313c3d;
+    }
+
+    #less-footer h4{
+        text-align: center;
+        font-family: 'Arial Narrow';
+        font-weight: bold;
+        letter-spacing: 4px;
+    }
+
+    #less-footer p{
+        margin-top: -23px;
+        text-align: center;
+        font-size: 14px;
+        margin-right: 0;
+    }
+
+    #less-footer p a{
+        color: rgb(140, 140, 192);
+    }
+    /* =============== */
+
+    /* subscribe button */
+    form#subscribe-newsletter div.input-group input[type="email"]:focus{
+        border: 1px solid black;
+        width: 235px;
+    }
+
+    form#subscribe-newsletter div.input-group input[type="email"]:focus::placeholder{
+        color: black;
+        
+    }
+    /* ================ */
+
+    /* Customer Service Support */
+    #customer-service-support .container .row div h5 span{
+        border-bottom:1px solid #003cc7; 
+    }
+
+    #customer-service-support .container .row div h3{
+        font-size: 20px;
+        font-weight: 800;
+    }
+    
+    
+    #customer-service-support .container .row div p{
+        font-family: 'Arial Narrow';
+        letter-spacing: 1.3px;
+        color: #313c3d;
+    }
+    
+    #customer-service-support .container .row div~div{
+        padding-top:35px;
+    }
+    
+    #customer-service-support .container .row div a{
+        background-color: #003cc7; 
+        width:150px; 
+        padding-right: 23px; 
+        padding-left: 23px;
+        border-color: none;
+        border-radius: 30px;
+    }
+
+    #customer-service-support .container .row div.col-md-5{
+        text-align: center;
+    }
+    
+    #customer-service-support .container .row div img{
+        width: 200px;
+        margin-top: 90px;
+        text-align: center
+    }
+    /* ====================== */
+
+    /* Revenue Hit Target */
+    #revenue-hit-target h5{
+        font-family: 'Arial Narrow';
+        letter-spacing: -0.7px;
+    }
+    /* ================ */
+
+    /* Offers */
+    #offers .container #description{
+        font-family: 'Arial Narrow';
+        font-weight: bold;
+    }
+
+    #offers .container ul{
+        list-style-type: square;
+        margin-left: -20px;
+        color: rgb(46, 45, 49);
+        letter-spacing: 2px;
+        font-family: 'Arial Narrow';
+    }
+
+    #offers .container ul li{
+        padding-bottom: 5px;
+    }
+    /* ====== */
+
+    /* Registration Page */
+    #registration-form div form label{
+        letter-spacing: 1.3px;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    #registration-form div form input[type=text]{
+        border: none;
+        border-bottom: 1px solid blue;
+        padding: 0;
+        width: 100%;
+    }
+
+    #registration-form div form input[type=tel]{
+        border: none;
+        border-bottom: 1px solid blue;
+        width: 117%;
+    }
+
+    /* ================ */
+
+}
+
+@media(max-width:320px){
+	.caption p a {
+		font-size: 14px;
+		letter-spacing: 0.5px;
+    }
+    .caption h3 {
+		line-height: 33px;
+		height: 62px;
+    }
+
+}
+
+.caption h3 span{
+	border-bottom: 2px solid #1cebe1;
+    padding-bottom: 5px;
+}
+/* end of  Media query for all screen */
+
+
